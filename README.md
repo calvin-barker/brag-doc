@@ -13,7 +13,9 @@ sudo mv ./brag /usr/local/bin
 sudo chmod +x /usr/local/bin/brag
 
 # Configure the brag doc location
-cd ../brag-doc
+cd ..
+gh repo clone calvin-barker/brag-doc
+cd brag-doc
 echo "export BRAG_DOCS_LOC=$(pwd)/work-docs" >> ~/.zshrc
 echo "export BRAG_DOCS_REPO_SYNC=true" >> ~/.zshrc
 source ~/.zshrc
